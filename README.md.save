@@ -1,0 +1,26 @@
+R
+# rmc-lemons
+Peque??a aplicaci??n para llevar el control y gestion de los gastos para una huerta de limon
+
+Caracter??sticas de esta applicaci??n
+
+1.-Registrarte ya sea como propietario o como empleado
+2.-Iniciar sesi??n seg??n el rol (Propietario/Empleado)
+
+Actividades como propietario
+1.-Registrar a tus empleados
+2.-Registrar las cajas que cortan cada empledo
+3.-Lleva el control de cu??nto se le debe pagar a cada empleado
+4.-Lleva el control de cu??nto es la ganancia despu??s del pago de tus empleados
+5.-Lleva un control de los prestamos a tus empleados
+6.-Registrar productos (Fertilizantes, pesticidas, etc) para mejor control de gastos
+7.-Lleva un registro por marca de cada producto, esto para comparar precios
+8.-Grafica mensual seg??n lo invertido con la ganancia
+
+
+Actividades como empleado
+1.-Registrarse
+2.-Ver el historial de cajas que se hace por d??a, semana, mes, a??o
+3.-Ver el historial de sus pagos
+4.-Ver el seguimiento de sus prestamos
+5.-Ver su rating

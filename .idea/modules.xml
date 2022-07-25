@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MCLemons.iml" filepath="$PROJECT_DIR$/.idea/modules/MCLemons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MCLemons.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MCLemons.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MCLemons.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MCLemons.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MCLemons.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MCLemons.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MCLemons.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MCLemons.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MCLemons.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/MCLemons.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MCLemons.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MCLemons.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MCLemons.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MCLemons.buildSrc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/commonutils/MCLemons.commonutils.iml" filepath="$PROJECT_DIR$/.idea/modules/commonutils/MCLemons.commonutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/MCLemons.features.iml" filepath="$PROJECT_DIR$/.idea/modules/features/MCLemons.features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.iml" filepath="$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.main.iml" filepath="$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/MCLemons.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/MCLemons.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/core/MCLemons.library.core.iml" filepath="$PROJECT_DIR$/.idea/modules/library/core/MCLemons.library.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/core/MCLemons.library.core.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/core/MCLemons.library.core.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/core/MCLemons.library.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/core/MCLemons.library.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/core/MCLemons.library.core.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/core/MCLemons.library.core.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/ui-system/MCLemons.library.ui-system.iml" filepath="$PROJECT_DIR$/.idea/modules/library/ui-system/MCLemons.library.ui-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/ui-system/MCLemons.library.ui-system.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/ui-system/MCLemons.library.ui-system.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/ui-system/MCLemons.library.ui-system.main.iml" filepath="$PROJECT_DIR$/.idea/modules/library/ui-system/MCLemons.library.ui-system.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/ui-system/MCLemons.library.ui-system.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/ui-system/MCLemons.library.ui-system.unitTest.iml" />
+    </modules>
+  </component>
+</project>
