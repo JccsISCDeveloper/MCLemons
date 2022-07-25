@@ -12,10 +12,18 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MCLemons.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MCLemons.buildSrc.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/commonutils/MCLemons.commonutils.iml" filepath="$PROJECT_DIR$/.idea/modules/commonutils/MCLemons.commonutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/MCLemons.features.iml" filepath="$PROJECT_DIR$/.idea/modules/features/MCLemons.features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/home/MCLemons.features.home.iml" filepath="$PROJECT_DIR$/.idea/modules/features/home/MCLemons.features.home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/home/MCLemons.features.home.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/home/MCLemons.features.home.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/home/MCLemons.features.home.main.iml" filepath="$PROJECT_DIR$/.idea/modules/features/home/MCLemons.features.home.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/home/MCLemons.features.home.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/home/MCLemons.features.home.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.iml" filepath="$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.main.iml" filepath="$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/login/MCLemons.features.login.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/signin/MCLemons.features.signin.iml" filepath="$PROJECT_DIR$/.idea/modules/features/signin/MCLemons.features.signin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/signin/MCLemons.features.signin.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/signin/MCLemons.features.signin.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/signin/MCLemons.features.signin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/features/signin/MCLemons.features.signin.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/signin/MCLemons.features.signin.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/features/signin/MCLemons.features.signin.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/MCLemons.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/MCLemons.library.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/core/MCLemons.library.core.iml" filepath="$PROJECT_DIR$/.idea/modules/library/core/MCLemons.library.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/core/MCLemons.library.core.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/library/core/MCLemons.library.core.androidTest.iml" />

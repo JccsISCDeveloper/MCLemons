@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: artifacts:commonutils:unspecified">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/commonutils/build/.transforms/f3368a1b0897640a01b6c8599de7471c/transformed/commonutils/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/commonutils/build/.transforms/f3368a1b0897640a01b6c8599de7471c/transformed/commonutils/res" />
-      <root url="jar://$PROJECT_DIR$/commonutils/build/.transforms/f3368a1b0897640a01b6c8599de7471c/transformed/commonutils/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/commonutils/build/.transforms/88b83ba1f90b9cb52050d7e4edb91a8d/transformed/commonutils/res" />
+      <root url="jar://$PROJECT_DIR$/commonutils/build/.transforms/88b83ba1f90b9cb52050d7e4edb91a8d/transformed/commonutils/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/commonutils/build/.transforms/88b83ba1f90b9cb52050d7e4edb91a8d/transformed/commonutils/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
