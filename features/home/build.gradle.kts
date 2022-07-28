@@ -52,17 +52,34 @@ repositories {
 }
 
 dependencies {
+
+    //Implements
     implementation(project(":commonutils"))
     implementation(project(":library:core"))
     implementation(project(":library:ui-system"))
-    androidTestImplementation(Dependency.testAndroidJEspressoCore)
-    androidTestImplementation(Dependency.testAndroidJunit)
-    androidTestImplementation(Dependency.testAndroidRules)
-    androidTestImplementation(Dependency.testAndroidRunner)
-    androidTestImplementation(Dependency.testTruth)
-    testImplementation(Dependency.testJunit)
 
-    api(Dependency.appcompat)
-    api(Dependency.constraintlayout)
-    api(Dependency.coreKtx)
+    //Dependencies gradle app
+    Dependency.apply {
+        api(coreKtx)
+        api(appcompat)
+        testImplementation(testJunit)
+        androidTestImplementation(testTruth)
+        androidTestImplementation(testAndroidRules)
+        androidTestImplementation(testAndroidJunit)
+        androidTestImplementation(testAndroidRunner)
+        androidTestImplementation(testAndroidJEspressoCore)
+    }
+
+    //NAV-COMPONENT
+    Dependency.apply {
+        implementation(navigationUIKtx)
+        implementation(navigationFragmentKtx)
+    }
+
+    //DESIGN
+    Dependency.apply {
+        api(constraintlayout)
+        implementation(materialDesign)
+    }
+
 }

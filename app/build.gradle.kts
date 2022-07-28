@@ -1,16 +1,8 @@
-import Dependency.appcompat
-import Dependency.coreKtx
-
 plugins {
     id("com.android.application")
     id(Dependency.pluginKotlinApp)
     id(Dependency.pluginkotlinParcelize)
 }
-
-/*apply {
-    plugin(Dependency.pluginKotlinApp)
-    plugin(Dependency.pluginKotlinKapt)
-}*/
 
 repositories {
     google()
@@ -96,14 +88,16 @@ dependencies {
     implementation(project(":library:ui-system"))
 
     //Dependencies gradle app
-    api(coreKtx)
-    api(appcompat)
-    testImplementation(Dependency.testJunit)
-    androidTestImplementation(Dependency.testTruth)
-    androidTestImplementation(Dependency.testAndroidRules)
-    androidTestImplementation(Dependency.testAndroidJunit)
-    androidTestImplementation(Dependency.testAndroidRunner)
-    androidTestImplementation(Dependency.testAndroidJEspressoCore)
+    Dependency.apply {
+        api(coreKtx)
+        api(appcompat)
+        testImplementation(testJunit)
+        androidTestImplementation(testTruth)
+        androidTestImplementation(testAndroidRules)
+        androidTestImplementation(testAndroidJunit)
+        androidTestImplementation(testAndroidRunner)
+        androidTestImplementation(testAndroidJEspressoCore)
+    }
 
     //NAV-COMPONENT
     Dependency.apply {
@@ -112,6 +106,8 @@ dependencies {
     }
 
     //DESIGN
-    api(Dependency.constraintlayout)
-    implementation(Dependency.materialDesign)
+    Dependency.apply {
+        api(constraintlayout)
+        implementation(materialDesign)
+    }
 }
