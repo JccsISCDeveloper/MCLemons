@@ -6,9 +6,9 @@ buildscript {
         maven (url ="https://www.jitpack.io")
     }
     dependencies {
-        classpath(Dependency.pluginKotlin)
-        classpath(Dependency.pluginBuildTools)
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
+        classpath(Dependency.classPathBuildTools)
+        classpath(Dependency.classPathPluginKotlin)
+        classpath(Dependency.classpathSaveArguments)
     }
 }
 

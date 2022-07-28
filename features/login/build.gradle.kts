@@ -1,12 +1,20 @@
+import Dependency.appcompat
+import Dependency.constraintlayout
+import Dependency.coreKtx
+import Dependency.materialDesign
+import Dependency.testAndroidJEspressoCore
+import Dependency.testAndroidJunit
+import Dependency.testAndroidRules
+import Dependency.testAndroidRunner
+import Dependency.testJunit
+import Dependency.testTruth
+
 plugins {
-    id("com.android.library")
-    id("kotlin-android")
+    id(Dependency.pluginLibrary)
+    id(Dependency.pluginKotlinApp)
+    id(Dependency.pluginKotlinKapt)
+    id(Dependency.pluginkotlinParcelize)
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
-}
-apply {
-    plugin(Dependency.pluginKotlinApp)
-    plugin(Dependency.pluginKotlinKapt)
 }
 
 android {
@@ -55,17 +63,28 @@ repositories {
 }
 
 dependencies {
+    //Implements
     implementation(project(":commonutils"))
     implementation(project(":library:core"))
     implementation(project(":library:ui-system"))
-    androidTestImplementation(Dependency.testAndroidJEspressoCore)
-    androidTestImplementation(Dependency.testAndroidJunit)
-    androidTestImplementation(Dependency.testAndroidRules)
-    androidTestImplementation(Dependency.testAndroidRunner)
-    androidTestImplementation(Dependency.testTruth)
-    testImplementation(Dependency.testJunit)
 
-    api(Dependency.appcompat)
-    api(Dependency.constraintlayout)
-    api(Dependency.coreKtx)
+    //Dependencies gradle app
+    api(coreKtx)
+    api(appcompat)
+    testImplementation(testJunit)
+    androidTestImplementation(testTruth)
+    androidTestImplementation(testAndroidRules)
+    androidTestImplementation(testAndroidJunit)
+    androidTestImplementation(testAndroidRunner)
+    androidTestImplementation(testAndroidJEspressoCore)
+
+    //NAV-COMPONENT
+   Dependency.apply {
+        implementation(navigationUIKtx)
+        implementation(navigationFragmentKtx)
+    }
+
+    //DESIGN
+    api(constraintlayout)
+    implementation(materialDesign)
 }

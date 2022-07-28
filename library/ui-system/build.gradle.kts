@@ -1,10 +1,18 @@
+import Dependency.appcompat
+import Dependency.coreKtx
+import Dependency.materialDesign
+import Dependency.testAndroidJEspressoCore
+import Dependency.testAndroidJunit
+import Dependency.testAndroidRules
+import Dependency.testAndroidRunner
+import Dependency.testJunit
+import Dependency.testTruth
+
 plugins {
-    id("com.android.library")
+    id(Dependency.pluginLibrary)
+    id(Dependency.pluginKotlinApp)
+    id(Dependency.pluginKotlinKapt)
     id("org.jetbrains.kotlin.android")
-}
-apply {
-    plugin(Dependency.pluginKotlinApp)
-    plugin(Dependency.pluginKotlinKapt)
 }
 
 android {
@@ -38,14 +46,19 @@ repositories {
     maven(url = "https://www.jitpack.io")
 }
 dependencies {
+    //Implements
     implementation(project(":commonutils"))
-    testImplementation("junit:junit:")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 
-    api(Dependency.appcompat)
-    api(Dependency.constraintlayout)
-    api(Dependency.coreKtx)
+    //Dependencies gradle app
+    api(coreKtx)
+    api(appcompat)
+    testImplementation(testJunit)
+    androidTestImplementation(testTruth)
+    androidTestImplementation(testAndroidRules)
+    androidTestImplementation(testAndroidJunit)
+    androidTestImplementation(testAndroidRunner)
+    androidTestImplementation(testAndroidJEspressoCore)
 
-    implementation(Dependency.material)
+
+    implementation(materialDesign)
 }

@@ -1,12 +1,9 @@
 plugins {
-    id("com.android.library")
-    id("kotlin-android")
+    id(Dependency.pluginLibrary)
+    id(Dependency.pluginKotlinApp)
+    id(Dependency.pluginKotlinKapt)
+    id(Dependency.pluginkotlinParcelize)
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
-}
-apply {
-    plugin(Dependency.pluginKotlinApp)
-    plugin(Dependency.pluginKotlinKapt)
 }
 
 android {

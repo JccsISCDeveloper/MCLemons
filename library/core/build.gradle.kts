@@ -1,11 +1,10 @@
 plugins {
-    id("com.android.library")
+    id(Dependency.pluginLibrary)
+    id(Dependency.pluginKotlinApp)
+    id(Dependency.pluginKotlinKapt)
     id("org.jetbrains.kotlin.android")
 }
-apply {
-    plugin(Dependency.pluginKotlinApp)
-    plugin(Dependency.pluginKotlinKapt)
-}
+
 repositories {
     google()
     jcenter()

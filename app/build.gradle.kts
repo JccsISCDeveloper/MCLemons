@@ -1,13 +1,16 @@
+import Dependency.appcompat
+import Dependency.coreKtx
+
 plugins {
     id("com.android.application")
-    id("kotlin-android")
-    id("kotlin-kapt")
+    id(Dependency.pluginKotlinApp)
+    id(Dependency.pluginkotlinParcelize)
 }
 
-apply {
+/*apply {
     plugin(Dependency.pluginKotlinApp)
     plugin(Dependency.pluginKotlinKapt)
-}
+}*/
 
 repositories {
     google()
@@ -83,20 +86,32 @@ android {
 
 
 dependencies {
+
+    //Implements
     implementation(project(":commonutils"))
-    implementation(project(":features:login"))
     implementation(project(":library:core"))
+    implementation(project(":features:home"))
+    implementation(project(":features:login"))
+    implementation(project(":features:signin"))
     implementation(project(":library:ui-system"))
-    androidTestImplementation(Dependency.testAndroidJEspressoCore)
-    androidTestImplementation(Dependency.testAndroidJunit)
-    androidTestImplementation(Dependency.testAndroidRules)
-    androidTestImplementation(Dependency.testAndroidRunner)
-    androidTestImplementation(Dependency.testTruth)
+
+    //Dependencies gradle app
+    api(coreKtx)
+    api(appcompat)
     testImplementation(Dependency.testJunit)
+    androidTestImplementation(Dependency.testTruth)
+    androidTestImplementation(Dependency.testAndroidRules)
+    androidTestImplementation(Dependency.testAndroidJunit)
+    androidTestImplementation(Dependency.testAndroidRunner)
+    androidTestImplementation(Dependency.testAndroidJEspressoCore)
 
-    api(Dependency.appcompat)
+    //NAV-COMPONENT
+    Dependency.apply {
+        implementation(navigationUIKtx)
+        implementation(navigationFragmentKtx)
+    }
+
+    //DESIGN
     api(Dependency.constraintlayout)
-    api(Dependency.coreKtx)
-
-    implementation(Dependency.material)
+    implementation(Dependency.materialDesign)
 }
