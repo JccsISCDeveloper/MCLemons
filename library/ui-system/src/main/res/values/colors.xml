@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="green_dark_700">#55B149</color>
+    <color name="green_dark_600">#75C06C</color>
+    <color name="green_dark_500">#8BCA82</color>
+    <color name="green_dark_400">#9FD399</color>
+    <color name="green_dark_300">#B7DEB2</color>
+    <color name="green_dark_200">#CBE7C8</color>
+    <color name="green_dark_100">#E2F2E0</color>
+
+    <color name="green_litte_700">#71F27E</color>
+    <color name="green_litte_600">#88F493</color>
+    <color name="green_litte_500">#9CF6A5</color>
+    <color name="green_litte_400">#ADF7B4</color>
+    <color name="green_litte_300">#C2F9C8</color>
+    <color name="green_litte_200">#D2FBD6</color>
+    <color name="green_litte_100">#E5FCE7</color>
+
+    <color name="blue_dark_700">#07102C</color>
+    <color name="blue_dark_600">#30384F</color>
+    <color name="blue_dark_500">#555B6E</color>
+    <color name="blue_dark_400">#757A89</color>
+    <color name="blue_dark_300">#9498A4</color>
+    <color name="blue_dark_200">#B6B9C1</color>
+    <color name="blue_dark_100">#D6D8DD</color>
+
+    <color name="yellow_700">#FFD400</color>
+    <color name="yellow_600">#FFDC2E</color>
+    <color name="yellow_500">#FFE14E</color>
+    <color name="yellow_400">#FFE773</color>
+    <color name="yellow_300">#FFEC8E</color>
+    <color name="yellow_200">#FFF3B4</color>
+    <color name="yellow_100">#FFF7D1</color>
+
+    <color name="purple_700">#AC5A7A</color>
+    <color name="purple_600">#BB7892</color>
+    <color name="purple_500">#C58DA3</color>
+    <color name="purple_400">#D0A2B4</color>
+    <color name="purple_300">#DBB8C5</color>
+    <color name="purple_200">#E6CCD6</color>
+    <color name="purple_100">#F0E2E8</color>
+
+
+</resources>

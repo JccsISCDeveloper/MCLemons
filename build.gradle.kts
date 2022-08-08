@@ -9,6 +9,7 @@ buildscript {
         classpath(Dependency.classPathBuildTools)
         classpath(Dependency.classPathPluginKotlin)
         classpath(Dependency.classpathSaveArguments)
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
     }
 }
 

@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id(Dependency.pluginKotlinApp)
-    id(Dependency.pluginkotlinParcelize)
+    id(Dependency.pluginKotlinKapt)
 }
 
 repositories {
