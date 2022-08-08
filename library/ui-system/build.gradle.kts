@@ -51,5 +51,10 @@ dependencies {
         androidTestImplementation(testAndroidJEspressoCore)
     }
 
+    //DESIGN
+    Dependency.apply {
+        api(constraintlayout)
+        implementation(materialDesign)
+    }
     
 }

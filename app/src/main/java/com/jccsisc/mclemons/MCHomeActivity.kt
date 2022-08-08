@@ -1,11 +1,13 @@
 package com.jccsisc.mclemons
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import com.boreal.commonutils.base.CUBaseActivity
+import com.jccsisc.mclemons.databinding.McHomeActivityBinding
 
-class MCHomeActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.mc_home_activity)
+class MCHomeActivity : CUBaseActivity<McHomeActivityBinding>() {
+
+    override fun getLayout() = R.layout.mc_home_activity
+
+    override fun initView() = with(binding) {
+
     }
 }

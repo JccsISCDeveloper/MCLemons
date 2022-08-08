@@ -41,6 +41,7 @@ android {
 
     buildFeatures {
         dataBinding = true
+        viewBinding = true
     }
 }
 
@@ -80,5 +81,6 @@ dependencies {
     Dependency.apply {
         api(constraintlayout)
         implementation(materialDesign)
+        implementation(Dependency.lottie)
     }
 }
