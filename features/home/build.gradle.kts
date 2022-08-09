@@ -80,6 +80,7 @@ dependencies {
     Dependency.apply {
         api(constraintlayout)
         implementation(materialDesign)
+        implementation(roundableLayout)
     }
 
 }

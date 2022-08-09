@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="212.001dp"
+    android:layout_height="236dp"
+    app:cardCornerRadius="28dp"
+    android:layout_marginStart="28dp"
+    android:layout_marginEnd="20dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:focusable="true"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="8dp"
+        android:background="@drawable/ic_background_cardview"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="Juan Casillas Morales"
+                android:layout_margin="10dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/green_dark_100"
+                style="@style/txtTitle_20" />
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+
+                <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:backgroundColor="@color/green_dark_100"
+                    app:cornerLeftSide="@dimen/corner_radius_8"
+                    app:cornerRightSide="@dimen/corner_radius_8"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:id="@+id/ivImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_circle_up"/>
+                </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+                <androidx.constraintlayout.utils.widget.ImageFilterView
+                    android:id="@+id/imvWarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_alerta"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:paddingTop="6dp"
+                style="@style/txtStaticsPagoTodayMain"/>
+
+            <TextView
+                android:id="@+id/tvPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="450"
+                style="@style/txtPagoTodayMainStyle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:paddingTop="6dp"
+                android:text=".00"
+                style="@style/txtStaticsPagoTodayMain"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_margin="10dp">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="0.5"
+               android:orientation="horizontal">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_start"/>
+               <TextView
+                   android:id="@+id/tvPlace"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="5"
+                   android:textColor="@color/blue_dark_700"
+                   android:textSize="@dimen/size_12"
+                   android:layout_marginStart="10dp"
+                   style="@style/txtTitle_20" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="5dp"
+                   android:text="Lugar"
+                   style="@style/txtLugarStyleMain"/>
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:paddingEnd="5dp">
+
+                <TextView
+                    android:id="@+id/tvBoxesAllDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textSize="@dimen/size_12"
+                    style="@style/txtStaticsPagoTodayMain"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CJA"
+                    android:layout_marginStart="5dp"
+                    android:textSize="@dimen/size_12"
+                    style="@style/txtStaticsPagoTodayMain"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                    android:id="@+id/btnSuma"
+                    app:backgroundColor="@color/green_dark_500"
+                    app:cornerLeftSide="10dp"
+                    app:cornerRightSide="10dp"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="11dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="43.5dp"
+                        android:src="@drawable/ic_plus"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPay"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="2"
+                    android:text="Pagar"
+                    android:layout_marginHorizontal="11dp"
+                    style="@style/btnPagarStyle"
+                    android:textAllCaps="false" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</layout>

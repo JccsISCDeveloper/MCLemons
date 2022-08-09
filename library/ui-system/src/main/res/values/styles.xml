@@ -15,7 +15,62 @@
         <item name="boxStrokeColor">@color/green_dark_300</item>
     </style>
 
+    <style name="txtTitle_20" parent="">
+        <item name="android:textColor">@color/blue_dark_700</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 
+    <style name="txtPagoTodayMainStyle" parent="">
+        <item name="android:textColor">@color/blue_dark_700</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/size_30</item>
+    </style>
+
+
+    <style name="txtLugarStyleMain" parent="">
+        <item name="android:textColor">@color/blue_dark_700</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="txtStaticsSmall" parent="">
+        <item name="android:textColor">@color/blue_dark_700</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/size_12</item>
+    </style>
+
+    <style name="txtStatics" parent="">
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="txtStaticsPagoTodayMain" parent="">
+        <item name="android:textColor">@color/green_dark_100</item>
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="txtPagoMain" parent="">
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">45sp</item>
+    </style>
+
+
+
+    <style name="CardViewSubMainStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomRight">50dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+    </style>
 
     <!--Buttons-->
     <style name="StyileBtnDarkBlue" parent="">
@@ -25,6 +80,15 @@
         <item name="fontFamily">@font/roboto_bold</item>
         <item name="cornerRadius">@dimen/corner_radius_10</item>
         <item name="android:textSize">@dimen/size_20</item>
+    </style>
+
+    <style name="btnPagarStyle" parent="">
+        <item name="backgroundTint">@color/blue_dark_700</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="android:textColor">@color/blue_dark_700</item>
+        <item name="cornerRadius">@dimen/corner_radius_13</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
 </resources>
