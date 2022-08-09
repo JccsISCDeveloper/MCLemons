@@ -7,7 +7,6 @@ class MCHomeActivity : CUBaseActivity<McHomeActivityBinding>() {
 
     override fun getLayout() = R.layout.mc_home_activity
 
-    override fun initView() = with(binding) {
+    override fun initView() { initElements() }
 
-    }
 }

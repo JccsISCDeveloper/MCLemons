@@ -8,7 +8,6 @@ class LoginFragment : CUBaseFragment<FragmentLoginBinding>() {
 
     override fun getLayout() = R.layout.fragment_login
 
-    override fun initView() {
+    override fun initView() { initElements() }
 
-    }
 }

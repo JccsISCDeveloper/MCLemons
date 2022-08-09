@@ -14,7 +14,7 @@
         android:theme="@style/Theme.MCLemons">
         <activity
             android:name=".MCHomeActivity"
-            android:exported="true">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
