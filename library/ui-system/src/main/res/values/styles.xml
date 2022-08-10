@@ -22,7 +22,7 @@
     </style>
 
     <style name="txtPagoTodayMainStyle" parent="">
-        <item name="android:textColor">@color/blue_dark_700</item>
+        <item name="android:textColor">@color/green_dark_100</item>
         <item name="fontFamily">@font/roboto</item>
         <item name="android:textSize">@dimen/size_30</item>
     </style>

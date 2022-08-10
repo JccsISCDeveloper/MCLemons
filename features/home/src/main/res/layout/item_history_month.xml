@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.tistory.zladnrms.roundablelayout.RoundableLayout
+            android:id="@+id/roundableGraphic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:backgroundColor="@color/purple_600"
+            app:cornerLeftSide="@dimen/corner_radius_20"
+            app:cornerRightSide="@dimen/corner_radius_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_12"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <ImageView
+                android:id="@+id/imgStatus"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_good_graphic"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+            <ImageView
+                android:id="@+id/imgEquals"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_equals"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/margin_15"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+
+        <TextView
+            android:id="@+id/tvMonth"
+            style="@style/txtStaticsSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Noviembre"
+            android:textSize="@dimen/text_size_20"
+            app:layout_constraintEnd_toStartOf="@+id/contentSaldoMonth"
+            app:layout_constraintHorizontal_bias="0.43"
+            app:layout_constraintStart_toEndOf="@+id/roundableGraphic"
+            app:layout_constraintTop_toTopOf="@+id/roundableGraphic" />
+
+        <TextView
+            android:id="@+id/tvQuantityCaj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1066 C"
+            style="@style/txtStatics"
+            android:textColor="@color/blue_dark_700"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintTop_toBottomOf="@+id/tvMonth"
+            app:layout_constraintStart_toStartOf="@+id/tvMonth"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/contentSaldoMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginEnd="@dimen/margin_12"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="top"
+                android:textSize="20sp"
+                style="@style/txtStatics"/>
+
+            <TextView
+                android:id="@+id/txtPayMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3,800"
+                android:textSize="@dimen/size_30"
+                style="@style/txtPagoMain"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="8dp"
+                android:text=".00"
+                android:textSize="20sp"
+                style="@style/txtStatics"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

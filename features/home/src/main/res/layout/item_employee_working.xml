@@ -7,7 +7,7 @@
     android:layout_width="212.001dp"
     android:layout_height="236dp"
     app:cardCornerRadius="28dp"
-    android:layout_marginStart="28dp"
+    android:layout_marginStart="24dp"
     android:layout_marginEnd="20dp"
     android:foreground="?android:attr/selectableItemBackground"
     android:focusable="true"
