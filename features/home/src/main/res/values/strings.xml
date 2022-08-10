@@ -1,5 +1,7 @@
 <resources>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="txt_saldo">Saldo</string>
+    <string name="str_name">%s %s</string>
+    <string name="str_month_year">%s %s</string>
+    <string name="str_boxes">%sC</string>
+    <string name="str_month_money">%s</string>
 </resources>

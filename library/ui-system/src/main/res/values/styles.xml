@@ -83,7 +83,7 @@
     </style>
 
     <style name="btnPagarStyle" parent="">
-        <item name="backgroundTint">@color/blue_dark_700</item>
+        <item name="backgroundTint">@color/green_dark_100</item>
         <item name="fontFamily">@font/roboto_bold</item>
         <item name="cornerFamily">rounded</item>
         <item name="android:textColor">@color/blue_dark_700</item>

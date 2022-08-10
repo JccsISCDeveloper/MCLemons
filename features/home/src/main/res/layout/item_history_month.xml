@@ -12,20 +12,21 @@
 
         <com.tistory.zladnrms.roundablelayout.RoundableLayout
             android:id="@+id/roundableGraphic"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             app:backgroundColor="@color/purple_600"
-            app:cornerLeftSide="@dimen/corner_radius_20"
-            app:cornerRightSide="@dimen/corner_radius_20"
+            app:cornerLeftSide="@dimen/corner_radius_17"
+            app:cornerRightSide="@dimen/corner_radius_17"
             android:layout_marginTop="@dimen/margin_10"
             android:layout_marginBottom="@dimen/margin_10"
             android:layout_marginStart="@dimen/margin_12"
+            android:padding="@dimen/padding_10"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
             <ImageView
                 android:id="@+id/imgStatus"
-                android:layout_width="40dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_good_graphic"
                 app:layout_constraintTop_toTopOf="parent"
@@ -51,11 +52,12 @@
             style="@style/txtStaticsSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
             android:fontFamily="@font/roboto_bold"
             android:text="Noviembre"
-            android:textSize="@dimen/text_size_20"
+            android:textSize="@dimen/size_18"
             app:layout_constraintEnd_toStartOf="@+id/contentSaldoMonth"
-            app:layout_constraintHorizontal_bias="0.43"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/roundableGraphic"
             app:layout_constraintTop_toTopOf="@+id/roundableGraphic" />
 
@@ -66,7 +68,7 @@
             android:text="1066 C"
             style="@style/txtStatics"
             android:textColor="@color/blue_dark_700"
-            android:textSize="@dimen/text_size_18"
+            android:textSize="@dimen/size_16"
             app:layout_constraintTop_toBottomOf="@+id/tvMonth"
             app:layout_constraintStart_toStartOf="@+id/tvMonth"
             app:layout_constraintBottom_toBottomOf="parent"/>
@@ -86,26 +88,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="5dp"
                 android:layout_gravity="top"
-                android:textSize="20sp"
+                android:textSize="@dimen/size_14"
                 style="@style/txtStatics"/>
 
             <TextView
-                android:id="@+id/txtPayMain"
+                android:id="@+id/tvPayMain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3,800"
-                android:textSize="@dimen/size_30"
+                android:textSize="@dimen/size_22"
                 style="@style/txtPagoMain"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="5dp"
                 android:text=".00"
-                android:textSize="20sp"
+                android:textSize="@dimen/size_16"
                 style="@style/txtStatics"/>
 
         </LinearLayout>

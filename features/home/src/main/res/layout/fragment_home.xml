@@ -91,6 +91,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/contentPriceBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -125,6 +126,17 @@
 
             </LinearLayout>
 
+            <ImageView
+                android:id="@+id/imgTreetSmall"
+                android:layout_width="@dimen/width_treet_small"
+                android:layout_height="@dimen/width_treet_small"
+                android:layout_marginEnd="@dimen/margin_20"
+                android:src="@drawable/ic_treet_app"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.81" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -147,7 +159,7 @@
             android:layout_height="70dp"
             app:cardCornerRadius="20dp"
             app:cardElevation="5dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/margin_20"
             android:layout_marginHorizontal="28dp"
             android:background="@color/green_dark_700"
             android:backgroundTint="@color/green_dark_200"
@@ -172,16 +184,16 @@
             android:layout_height="wrap_content"
             android:text="Meses Anteriores"
             style="@style/txtTitle_20"
-            android:layout_marginTop="30dp"
-            android:layout_marginStart="28dp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginStart="@dimen/margin_16"
             app:layout_constraintTop_toBottomOf="@+id/contentResumen"
             app:layout_constraintStart_toStartOf="parent"/>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvHistorialMesesMain"
+            android:id="@+id/rvHistoryMonth"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="@dimen/margin_15"
             tools:itemCount="3"
             tools:listitem="@layout/item_history_month"
             android:scrollbars="vertical"
