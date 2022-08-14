@@ -2,4 +2,19 @@
 
     <string name="app_name">MCLemons</string>
 
+    <string name="str_name">%s %s</string>
+    <string name="str_month_year">%s %s</string>
+    <string name="str_month_boxes">%sC</string>
+    <string name="str_amount_paid">$%s</string>
+    <string name="str_box">%s CAJA</string>
+    <string name="str_boxes">%s CAJAS</string>
+    <string name="str_month_money">%s</string>
+
+    <string name="txt_saldo">Saldo</string>
+    <string name="txt_boxes">Cajas</string>
+    <string name="txt_month">Mes</string>
+    <string name="txt_paid_out">Pagado</string>
+    <string name="txt_previous_months">Meses Anteriores</string>
+    <string name="txt_zero_point">.00</string>
+    <string name="txt_peso_sign">$</string>
 </resources>

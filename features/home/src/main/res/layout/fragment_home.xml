@@ -68,25 +68,28 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$"
+                    android:text="@string/txt_peso_sign"
                     android:layout_marginTop="8dp"
                     android:layout_gravity="top"
-                    style="@style/txtStatics"/>
+                    style="@style/StyleTvLightPurple_16"
+                    android:textSize="@dimen/size_28"/>
 
                 <TextView
-                    android:id="@+id/txtPayMain"
+                    android:id="@+id/tvPayable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3,800"
-                    style="@style/txtPagoMain"/>
+                    tools:text="3,800"
+                    style="@style/StyleTvPurple_22"
+                    android:textSize="@dimen/size_45"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="top"
                     android:layout_marginTop="8dp"
-                    android:text=".00"
-                    style="@style/txtStatics"/>
+                    android:text="@string/txt_zero_point"
+                    style="@style/StyleTvLightPurple_16"
+                    android:textSize="@dimen/size_28"/>
 
             </LinearLayout>
 
@@ -104,32 +107,32 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$"
-                    android:layout_gravity="top"
-                    android:layout_marginTop="5dp"
-                    style="@style/txtStaticsSmall"/>
-
-                <TextView
-                    android:id="@+id/txtCostBoxMain"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="30"
-                    style="@style/txtTitle_20"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=".00"
+                    android:text="@string/txt_peso_sign"
                     android:layout_gravity="top"
                     android:layout_marginTop="3dp"
-                    style="@style/txtStaticsSmall"/>
+                    style="@style/StyleTvLightBlueDark_16"/>
+
+                <TextView
+                    android:id="@+id/tvPriceBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="30"
+                    style="@style/StyleTvTitleBlueDark_20"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_zero_point"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="3dp"
+                    style="@style/StyleTvLightBlueDark_16"/>
 
             </LinearLayout>
 
             <ImageView
                 android:id="@+id/imgTreetSmall"
-                android:layout_width="@dimen/width_treet_small"
-                android:layout_height="@dimen/width_treet_small"
+                android:layout_width="@dimen/width_imv_30"
+                android:layout_height="@dimen/width_imv_30"
                 android:layout_marginEnd="@dimen/margin_20"
                 android:src="@drawable/ic_treet_app"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -143,24 +146,25 @@
             android:id="@+id/rvEmployees"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            tools:listitem="@layout/item_employee_working"
-            tools:itemCount="3"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.36" />
+            app:layout_constraintVertical_bias="0.3"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_employee_working" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/contentResumen"
             android:layout_width="0dp"
-            android:layout_height="70dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="5dp"
-            android:layout_marginTop="@dimen/margin_20"
-            android:layout_marginHorizontal="28dp"
+            android:layout_height="72dp"
+            app:cardCornerRadius="@dimen/corner_radius_20"
+            app:cardElevation="@dimen/elevation_6"
+            android:layout_marginTop="@dimen/margin_30"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginEnd="@dimen/margin_20"
             android:background="@color/green_dark_700"
             android:backgroundTint="@color/green_dark_200"
             app:layout_constraintTop_toBottomOf="@+id/rvEmployees"
@@ -171,35 +175,132 @@
                 android:layout_width="match_parent"
                 android:layout_marginEnd="57dp"
                 android:layout_height="match_parent"
-                app:cardElevation="5dp"
-                style="@style/CardViewSubMainStyle">
+                app:cardElevation="@dimen/elevation_6"
+                style="@style/StyleCardViewSubMain">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_boxes"
+                            style="@style/StyleTvBoldBlueDark_200_16"/>
+
+                        <TextView
+                            android:id="@+id/tvCurrentMonthBoxes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="150"
+                            style="@style/StyleTvLightBlueDark_16"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvPaidOut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_paid_out"
+                            style="@style/StyleTvBoldBlueDark_200_16"/>
+
+                        <TextView
+                            android:id="@+id/tvAmountPaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="$3500"
+                            style="@style/StyleTvLightBlueDark_16"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvMonthL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_month"
+                            style="@style/StyleTvBoldBlueDark_200_16"/>
+
+                        <TextView
+                            android:id="@+id/tvMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="Ago"
+                            style="@style/StyleTvLightBlueDark_16"/>
+                    </LinearLayout>
+                </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
         </com.google.android.material.card.MaterialCardView>
 
         <TextView
-            android:id="@+id/tvMesesAnteriores"
+            android:id="@+id/tvPreviousMonths"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Meses Anteriores"
-            style="@style/txtTitle_20"
-            android:fontFamily="@font/roboto_bold"
-            android:layout_marginTop="@dimen/margin_20"
+            android:text="@string/txt_previous_months"
+            style="@style/StyleTvTitleBlueDark_20"
+            android:layout_marginTop="@dimen/margin_50"
             android:layout_marginStart="@dimen/margin_16"
             app:layout_constraintTop_toBottomOf="@+id/contentResumen"
             app:layout_constraintStart_toStartOf="parent"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilMonthYear"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:layout_marginStart="@dimen/margin_20"
+            android:padding="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvPreviousMonths"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPreviousMonths">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteYear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:hint="Año" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvHistoryMonth"
             android:layout_width="0dp"
             android:layout_height="0dp"
             tools:itemCount="3"
+            android:paddingHorizontal="@dimen/padding_15"
+            android:layout_marginTop="@dimen/margin_10"
             tools:listitem="@layout/item_history_month"
             android:scrollbars="vertical"
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintTop_toBottomOf="@+id/tvMesesAnteriores"
+            app:layout_constraintTop_toBottomOf="@+id/tvPreviousMonths"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>

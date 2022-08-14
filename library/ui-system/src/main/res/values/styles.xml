@@ -15,52 +15,55 @@
         <item name="boxStrokeColor">@color/green_dark_300</item>
     </style>
 
-    <style name="txtTitle_20" parent="">
+
+
+    <!--TextView-->
+    <style name="StyleTvTitleBlueDark_20" parent="Widget.AppCompat.TextView">
         <item name="android:textColor">@color/blue_dark_700</item>
         <item name="fontFamily">@font/roboto_bold</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">@dimen/size_20</item>
     </style>
 
-    <style name="txtPagoTodayMainStyle" parent="">
-        <item name="android:textColor">@color/green_dark_100</item>
-        <item name="fontFamily">@font/roboto</item>
-        <item name="android:textSize">@dimen/size_30</item>
-    </style>
-
-
-    <style name="txtLugarStyleMain" parent="">
+    <style name="StyleTvLightBlueDark_16" parent="Widget.AppCompat.TextView">
         <item name="android:textColor">@color/blue_dark_700</item>
-        <item name="fontFamily">@font/roboto</item>
-        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/size_16</item>
     </style>
 
-    <style name="txtStaticsSmall" parent="">
-        <item name="android:textColor">@color/blue_dark_700</item>
+    <style name="StyleTvBoldBlueDark_200_16" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/blue_dark_200</item>
         <item name="fontFamily">@font/roboto_bold</item>
-        <item name="android:textSize">@dimen/size_12</item>
+        <item name="android:textSize">@dimen/size_16</item>
     </style>
 
-    <style name="txtStatics" parent="">
-        <item name="android:textColor">@color/purple_700</item>
-        <item name="fontFamily">@font/roboto_light</item>
-        <item name="android:textSize">25sp</item>
+    <style name="StyleTvTitleGreenDark_100_20" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/green_dark_100</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/size_20</item>
     </style>
 
-    <style name="txtStaticsPagoTodayMain" parent="">
+    <style name="StyleTvLightGreen_100_16" parent="Widget.AppCompat.TextView">
         <item name="android:textColor">@color/green_dark_100</item>
         <item name="fontFamily">@font/roboto_light</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/size_16</item>
     </style>
 
-    <style name="txtPagoMain" parent="">
+    <style name="StyleTvLightPurple_16" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">@dimen/size_16</item>
+    </style>
+
+    <style name="StyleTvPurple_22" parent="Widget.AppCompat.TextView">
         <item name="android:textColor">@color/purple_700</item>
         <item name="fontFamily">@font/roboto</item>
-        <item name="android:textSize">45sp</item>
+        <item name="android:textSize">@dimen/size_22</item>
     </style>
 
 
 
-    <style name="CardViewSubMainStyle" parent="@style/Widget.MaterialComponents.CardView">
+
+    <style name="StyleCardViewSubMain" parent="@style/Widget.MaterialComponents.CardView">
         <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut</item>
     </style>
 
@@ -82,7 +85,7 @@
         <item name="android:textSize">@dimen/size_20</item>
     </style>
 
-    <style name="btnPagarStyle" parent="">
+    <style name="StyleBtnToPay" parent="">
         <item name="backgroundTint">@color/green_dark_100</item>
         <item name="fontFamily">@font/roboto_bold</item>
         <item name="cornerFamily">rounded</item>

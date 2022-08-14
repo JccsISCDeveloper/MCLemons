@@ -10,5 +10,6 @@ data class Employees(
     val name: String,
     val lastName: String,
     val image: String,
-    val position: Int
+    val position: Int,
+    val numBox: Int
 )

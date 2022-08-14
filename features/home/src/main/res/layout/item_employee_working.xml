@@ -3,62 +3,77 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+    </data>
+
     <androidx.cardview.widget.CardView
-        android:layout_width="212.001dp"
-        android:layout_height="236dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="210dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_20"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?android:attr/selectableItemBackground"
-        app:cardCornerRadius="28dp">
+        app:cardCornerRadius="@dimen/corner_radius_28">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/ic_background_cardview"
             android:orientation="vertical"
-            android:paddingHorizontal="8dp">
+            android:paddingHorizontal="@dimen/padding_5">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:id="@+id/contentOne"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:weightSum="1">
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
 
                 <TextView
                     android:id="@+id/tvName"
-                    style="@style/txtTitle_20"
+                    style="@style/StyleTvTitleGreenDark_100_20"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
                     android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
                     android:ellipsize="end"
                     android:lines="1"
-                    android:textColor="@color/green_dark_100"
                     tools:text="Juan Casillas Morales" />
 
                 <RelativeLayout
                     android:layout_width="50dp"
                     android:layout_height="50dp">
 
-
                     <com.tistory.zladnrms.roundablelayout.RoundableLayout
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:id="@+id/roundableImv"
+                        android:layout_width="@dimen/width_imv_40"
+                        android:layout_height="@dimen/width_imv_40"
                         android:layout_centerInParent="true"
+                        app:strokeLineWidth="2dp"
+                        app:strokeLineColor="@color/orange"
                         app:backgroundColor="@color/green_dark_100"
                         app:cornerLeftSide="@dimen/corner_radius_8"
                         app:cornerRightSide="@dimen/corner_radius_8">
 
                         <ImageView
-                            android:id="@+id/ivImage"
+                            android:id="@+id/imvImage"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_circle_up" />
+                            android:src="@drawable/ic_user_man"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"/>
+
                     </com.tistory.zladnrms.roundablelayout.RoundableLayout>
 
-                    <androidx.constraintlayout.utils.widget.ImageFilterView
+                    <ImageView
                         android:id="@+id/imvWarning"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -70,47 +85,56 @@
 
             </LinearLayout>
 
-
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:id="@+id/contentTwo"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_10"
+                app:layout_constraintTop_toBottomOf="@+id/contentOne"
+                app:layout_constraintStart_toStartOf="@+id/contentOne"
+                app:layout_constraintEnd_toEndOf="@+id/contentOne">
 
                 <TextView
-                    style="@style/txtStaticsPagoTodayMain"
+                    style="@style/StyleTvLightGreen_100_16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
-                    android:layout_marginTop="5dp"
-                    android:paddingTop="6dp"
-                    android:text="$" />
+                    android:paddingTop="@dimen/padding_10"
+                    android:textSize="@dimen/size_24"
+                    android:text="@string/txt_peso_sign" />
 
                 <TextView
-                    android:id="@+id/tvPayment"
-                    style="@style/txtPagoTodayMainStyle"
+                    android:id="@+id/tvPayDay"
+                    style="@style/StyleTvLightGreen_100_16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="450" />
+                    tools:text="450"
+                    android:textSize="@dimen/size_40"/>
 
                 <TextView
-                    style="@style/txtStaticsPagoTodayMain"
+                    style="@style/StyleTvLightGreen_100_16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
-                    android:layout_marginTop="5dp"
-                    android:paddingTop="6dp"
-                    android:text=".00" />
+                    android:paddingTop="@dimen/padding_10"
+                    android:text="@string/txt_zero_point"
+                    android:textSize="@dimen/size_22"/>
 
             </LinearLayout>
 
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:id="@+id/contentThree"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:orientation="horizontal"
-                android:weightSum="1">
+                android:weightSum="1"
+                android:layout_marginTop="@dimen/margin_10"
+                app:layout_constraintTop_toBottomOf="@+id/contentTwo"
+                app:layout_constraintStart_toStartOf="@+id/contentTwo"
+                app:layout_constraintEnd_toEndOf="@+id/contentTwo">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -119,26 +143,24 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="@dimen/width_imv_25"
+                        android:layout_height="@dimen/width_imv_25"
                         android:src="@drawable/ic_start" />
 
                     <TextView
-                        android:id="@+id/tvPlace"
-                        style="@style/txtTitle_20"
+                        android:id="@+id/tvRating"
+                        style="@style/StyleTvLightGreen_100_16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:text="5"
-                        android:textColor="@color/blue_dark_700"
-                        android:textSize="@dimen/size_12" />
-
+                        android:layout_marginStart="@dimen/margin_5"
+                        tools:text="5" />
                     <TextView
-                        style="@style/txtLugarStyleMain"
+                        android:id="@+id/tvNameRating"
+                        style="@style/StyleTvLightGreen_100_16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:text="Lugar" />
+                        tools:text="Lugar" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -150,37 +172,34 @@
                     android:paddingEnd="5dp">
 
                     <TextView
-                        android:id="@+id/tvBoxesAllDay"
-                        style="@style/txtStaticsPagoTodayMain"
+                        android:id="@+id/tvBoxesDay"
+                        style="@style/StyleTvLightGreen_100_16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="15"
-                        android:textSize="@dimen/size_12" />
-
-                    <TextView
-                        style="@style/txtStaticsPagoTodayMain"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:text="CJA"
-                        android:textSize="@dimen/size_12" />
+                        tools:text="15 CAJAS"/>
                 </LinearLayout>
 
             </LinearLayout>
 
-
             <LinearLayout
-                android:layout_width="match_parent"
+                android:id="@+id/contentFour"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_8"
+                app:layout_constraintTop_toBottomOf="@+id/contentThree"
+                app:layout_constraintStart_toStartOf="@+id/contentThree"
+                app:layout_constraintEnd_toEndOf="@+id/contentThree"
+                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintBottom_toBottomOf="parent">
 
                 <com.tistory.zladnrms.roundablelayout.RoundableLayout
                     android:id="@+id/btnSuma"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginHorizontal="11dp"
                     android:layout_weight="2"
+                    android:layout_marginEnd="@dimen/margin_10"
                     app:backgroundColor="@color/green_dark_500"
                     app:cornerLeftSide="10dp"
                     app:cornerRightSide="10dp">
@@ -198,17 +217,15 @@
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnPay"
-                    style="@style/btnPagarStyle"
+                    style="@style/StyleBtnToPay"
                     android:layout_width="0dp"
                     android:layout_height="55dp"
-                    android:layout_marginHorizontal="11dp"
                     android:layout_weight="2"
                     android:text="Pagar"
                     android:textAllCaps="false" />
             </LinearLayout>
 
-
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 

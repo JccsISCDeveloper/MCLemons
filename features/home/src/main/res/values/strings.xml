@@ -1,7 +1,0 @@
-<resources>
-    <string name="txt_saldo">Saldo</string>
-    <string name="str_name">%s %s</string>
-    <string name="str_month_year">%s %s</string>
-    <string name="str_boxes">%sC</string>
-    <string name="str_month_money">%s</string>
-</resources>

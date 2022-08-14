@@ -34,8 +34,8 @@
 
         <ImageView
             android:id="@+id/imgTreetSmall"
-            android:layout_width="@dimen/width_treet_small"
-            android:layout_height="@dimen/width_treet_small"
+            android:layout_width="@dimen/width_imv_30"
+            android:layout_height="@dimen/width_imv_30"
             android:src="@drawable/ic_treet_app"
             android:layout_marginTop="@dimen/margin_16"
             android:layout_marginEnd="@dimen/margin_20"
